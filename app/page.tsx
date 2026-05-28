@@ -26,57 +26,57 @@ type Row =
 const rows: Row[] = [
   {
     type: "1col",
-    project: { id: "calderalab-1", name: "Caldera Lab", category: "Brand Identity", href: "/projects/calderalab", image: "/assets/images/calderalab/1.jpg", width: 750, height: 1000 },
+    project: { id: "calderalab-1", name: "Campaign", category: "Client", href: "/projects/calderalab", image: "/assets/images/calderalab/1.jpg", width: 750, height: 1000 },
   },
   {
     type: "2col",
     projects: [
-      { id: "chanel-1", name: "Chanel", category: "Art Direction", href: "/projects/chanel", image: "/assets/images/chanel/1.jpg", width: 750, height: 1000 },
-      { id: "tekinoktay-1", name: "Tekin Oktay Day", category: "Editorial", href: "/projects/tekinoktay-day", image: "/assets/images/tekinoktay-day/1.jpg", width: 750, height: 1000 },
+      { id: "chanel-1", name: "Campaign", category: "Client", href: "/projects/chanel", image: "/assets/images/chanel/1.jpg", width: 750, height: 1000 },
+      { id: "tekinoktay-1", name: "Campaign", category: "Client", href: "/projects/tekinoktay-day", image: "/assets/images/tekinoktay-day/1.jpg", width: 750, height: 1000 },
     ],
   },
   {
     type: "1col",
-    project: { id: "calderalab-2", name: "Caldera Lab", category: "Brand Identity", href: "/projects/calderalab", image: "/assets/images/calderalab/2.jpg", width: 750, height: 1000 },
+    project: { id: "calderalab-2", name: "Campaign", category: "Client", href: "/projects/calderalab", image: "/assets/images/calderalab/2.jpg", width: 750, height: 1000 },
   },
   {
     type: "2col",
     projects: [
-      { id: "chanel-2", name: "Chanel", category: "Art Direction", href: "/projects/chanel", image: "/assets/images/chanel/2.jpg", width: 750, height: 1000 },
-      { id: "tekinoktay-2", name: "Tekin Oktay Day", category: "Editorial", href: "/projects/tekinoktay-day", image: "/assets/images/tekinoktay-day/2.jpg", width: 2500, height: 3333 },
+      { id: "chanel-2", name: "Campaign", category: "Client", href: "/projects/chanel", image: "/assets/images/chanel/2.jpg", width: 750, height: 1000 },
+      { id: "tekinoktay-2", name: "Campaign", category: "Client", href: "/projects/tekinoktay-day", image: "/assets/images/tekinoktay-day/2.jpg", width: 2500, height: 3333 },
     ],
   },
   {
     type: "1col",
-    project: { id: "calderalab-3", name: "Caldera Lab", category: "Brand Identity", href: "/projects/calderalab", image: "/assets/images/calderalab/3.jpg", width: 750, height: 1000 },
+    project: { id: "calderalab-3", name: "Campaign", category: "Client", href: "/projects/calderalab", image: "/assets/images/calderalab/3.jpg", width: 750, height: 1000 },
   },
   {
     type: "2col",
     projects: [
-      { id: "chanel-3", name: "Chanel", category: "Art Direction", href: "/projects/chanel", image: "/assets/images/chanel/3.jpg", width: 750, height: 1000 },
-      { id: "tekinoktay-3", name: "Tekin Oktay Day", category: "Editorial", href: "/projects/tekinoktay-day", image: "/assets/images/tekinoktay-day/3.jpg", width: 2500, height: 3333 },
+      { id: "chanel-3", name: "Campaign", category: "Client", href: "/projects/chanel", image: "/assets/images/chanel/3.jpg", width: 750, height: 1000 },
+      { id: "tekinoktay-3", name: "Campaign", category: "Client", href: "/projects/tekinoktay-day", image: "/assets/images/tekinoktay-day/3.jpg", width: 2500, height: 3333 },
     ],
   },
   {
     type: "1col",
-    project: { id: "calderalab-4", name: "Caldera Lab", category: "Brand Identity", href: "/projects/calderalab", image: "/assets/images/calderalab/4.jpg", width: 500, height: 666 },
+    project: { id: "calderalab-4", name: "Campaign", category: "Client", href: "/projects/calderalab", image: "/assets/images/calderalab/4.jpg", width: 500, height: 666 },
   },
   {
     type: "2col",
     projects: [
-      { id: "chanel-4", name: "Chanel", category: "Art Direction", href: "/projects/chanel", image: "/assets/images/chanel/4.jpg", width: 750, height: 1000 },
-      { id: "tekinoktay-4", name: "Tekin Oktay Day", category: "Editorial", href: "/projects/tekinoktay-day", image: "/assets/images/tekinoktay-day/4.jpg", width: 2500, height: 3333 },
+      { id: "chanel-4", name: "Campaign", category: "Client", href: "/projects/chanel", image: "/assets/images/chanel/4.jpg", width: 750, height: 1000 },
+      { id: "tekinoktay-4", name: "Campaign", category: "Client", href: "/projects/tekinoktay-day", image: "/assets/images/tekinoktay-day/4.jpg", width: 2500, height: 3333 },
     ],
   },
   {
     type: "1col",
-    project: { id: "calderalab-5", name: "Caldera Lab", category: "Brand Identity", href: "/projects/calderalab", image: "/assets/images/calderalab/5.jpg", width: 750, height: 1000 },
+    project: { id: "calderalab-5", name: "Campaign", category: "Client", href: "/projects/calderalab", image: "/assets/images/calderalab/5.jpg", width: 750, height: 1000 },
   },
   {
     type: "2col",
     projects: [
-      { id: "tekinoktay-5", name: "Tekin Oktay Day", category: "Editorial", href: "/projects/tekinoktay-day", image: "/assets/images/tekinoktay-day/5.jpg", width: 1500, height: 2000 },
-      { id: "tekinoktay-6", name: "Tekin Oktay Day", category: "Editorial", href: "/projects/tekinoktay-day", image: "/assets/images/tekinoktay-day/6.jpg", width: 1500, height: 2000 },
+      { id: "tekinoktay-5", name: "Campaign", category: "Client", href: "/projects/tekinoktay-day", image: "/assets/images/tekinoktay-day/5.jpg", width: 1500, height: 2000 },
+      { id: "tekinoktay-6", name: "Campaign", category: "Client", href: "/projects/tekinoktay-day", image: "/assets/images/tekinoktay-day/6.jpg", width: 1500, height: 2000 },
     ],
   },
 ];
