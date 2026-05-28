@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Lora, DM_Sans } from "next/font/google";
 import { Nav } from "./components/Nav";
 import { Footer } from "./components/Footer";
-import { SmoothScroll } from "./providers/SmoothScroll";
 import "./globals.css";
 
 const lora = Lora({
@@ -23,6 +22,26 @@ export const metadata: Metadata = {
   description: "Portfolio",
 };
 
+const scrollScript = `(function(){
+  var s=false,t;
+  function upd(){
+    var y=window.visualViewport?window.visualViewport.pageTop:(window.pageYOffset||document.documentElement.scrollTop||document.body.scrollTop||0);
+    clearTimeout(t);
+    if(!s && y>30){
+      s=true;document.body.classList.add('is-scrolled');
+    }else if(s && y<10){
+      s=false;document.body.classList.remove('is-scrolled');
+    }
+    if(s){
+      t=setTimeout(function(){s=false;document.body.classList.remove('is-scrolled');},10000);
+    }
+  }
+  window.addEventListener('scroll',upd,{passive:true});
+  window.addEventListener('touchmove',upd,{passive:true});
+  window.addEventListener('touchend',upd,{passive:true});
+  if(window.visualViewport)window.visualViewport.addEventListener('scroll',upd);
+})();`;
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -31,13 +50,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${lora.variable} ${dmSans.variable}`}>
       <body>
-        <SmoothScroll>
-          <Nav />
-          <div className="pt-[80px]">
-            {children}
-            <Footer />
-          </div>
-        </SmoothScroll>
+        <script dangerouslySetInnerHTML={{ __html: scrollScript }} />
+        <Nav />
+        <div>
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );
