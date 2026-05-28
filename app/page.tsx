@@ -89,9 +89,9 @@ export default function Home() {
       <div className="columns-1 md:columns-2 gap-[8em] px-8 md:px-10 lg:px-[72px]">
         {items.map((item) => (
           <div key={item.id} data-item className="mb-[4em] md:mb-[10em] break-inside-avoid">
-            <Link href={item.href} className="block">
+            <Link href={item.href} className="block group/card">
               <div
-                className="mx-auto"
+                className="mx-auto relative"
                 style={{ width: isFullWidth(item) ? "100%" : "var(--item-w, 85%)" }}
               >
                 {item.type === "video" ? (
@@ -116,6 +116,32 @@ export default function Home() {
                     sizes="(max-width: 767px) 85vw, 45vw"
                   />
                 )}
+
+                <div className="hidden md:flex absolute inset-0 items-center justify-center opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 bg-[var(--white-smoke)]/80 pointer-events-none">
+                  <span
+                    className="text-[var(--brand-black)]"
+                    style={{
+                      fontFamily: "var(--font-lora), serif",
+                      fontSize: "clamp(20px, 2vw, 26px)",
+                      letterSpacing: "0.01em",
+                    }}
+                  >
+                    Client
+                  </span>
+                </div>
+              </div>
+
+              <div className="md:hidden mt-3 text-center">
+                <span
+                  className="text-[var(--brand-black)]"
+                  style={{
+                    fontFamily: "var(--font-lora), serif",
+                    fontSize: "16px",
+                    letterSpacing: "0.01em",
+                  }}
+                >
+                  Client
+                </span>
               </div>
             </Link>
           </div>
