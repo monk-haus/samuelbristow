@@ -86,13 +86,13 @@ export default function Home() {
         </span>
       </div>
 
-      <div className="columns-1 md:columns-2 gap-[8em] px-8 md:px-10 lg:px-[72px]">
+      <div className="columns-1 md:columns-2 gap-[8em] px-10 md:px-16 lg:px-[120px]">
         {items.map((item) => (
           <div key={item.id} data-item className="mb-[4em] md:mb-[10em] break-inside-avoid">
             <Link href={item.href} className="block group/card">
               <div
                 className="mx-auto relative"
-                style={{ width: isFullWidth(item) ? "100%" : "var(--item-w, 85%)" }}
+                style={{ width: isFullWidth(item) ? "var(--item-w-full, 92%)" : "var(--item-w, 75%)" }}
               >
                 {item.type === "video" ? (
                   <video

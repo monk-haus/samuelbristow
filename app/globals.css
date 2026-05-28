@@ -3,7 +3,8 @@
 :root {
     --white-smoke: #faf9f6;
     --brand-black: #141210;
-    --item-w: 85%;
+    --item-w: 75%;
+    --item-w-full: 92%;
 }
 
 @theme inline {
@@ -15,7 +16,8 @@
 
 @media (min-width: 768px) {
     :root {
-        --item-w: 70%;
+        --item-w: 55%;
+        --item-w-full: 85%;
     }
 }
 
